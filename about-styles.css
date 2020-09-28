@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    height: 100%;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.button-space {
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    padding: 5px;
+}
+
+.nav-button {
+    color: white;
+    font-family: Noto Sans;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.button-space:hover {
+    transition-duration: .5s;
+    background-color: #71BEFF;
+    height: 100%;
+}
+
+.main-name-div {
+    width: 300px;
+    margin: auto;
+}
+
+.name {
+    text-align: center;
+    margin-top: 5vh;
+    box-sizing: border-box;
+    border-top: dashed #71BEFF;
+    border-bottom: dashed #71BEFF;
+    padding: 10px;
+    font-family: Noto Sans;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.portrait {
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+}
+
+.portrait-image {
+    width: 35vw;
+}
+
+.main-paragraph {
+    width: 35vw;
+    text-align: center;
+    margin: auto;
+    font-family: Noto Sans;
+    font-size: 19px;
+}
+
+.paragraph-container {
+    padding-bottom: 5vh;
+}
+
+@media (max-width: 576px) {
+    .main-paragraph {
+        font-size: 14px;
+    }
+
+    nav {
+        background-color: #71BEFF;
+    }
+
+    .button-space {
+        border: solid #71BEFF;
+    }
+
+    .button-space:hover {
+        border: solid white;
+        
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .icon {
+        width: 15%;
+        height: 15%;
+    }
+
+    .empty {
+        background-color: #71BEFF;
+    }
+
+    .main-paragraph {
+        width: 60vw;
+    }
+}
+
+
