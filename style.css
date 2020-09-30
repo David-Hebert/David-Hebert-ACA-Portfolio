@@ -12,6 +12,10 @@ body {
     margin: 3% 10%;
   }
 
+  #profile-pic {
+    text-align: center;
+  }
+
   header {
     display: grid;
     grid-template-columns: 40% 60%;
