@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="./resume-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="./resume-interactive.js"></script>
 </head>
 <body>
     <div class="grid-container">
         <div class="portrait-container">
-            <img class="portrait" src="./elon.jpg">
+            <img id="mainPic" onmouseover="picFade()" class="portrait" src="./elon.jpg">
         </div>
         <div class="name">
-            <h1>ELON<br> MUSK</h1>
+            <h1 class="animated" id="mainName" onclick="nameFade()">ELON<br> MUSK</h1>
             <hr class="name-rule">
         </div>
         <section class="job-title">
@@ -29,10 +31,10 @@
             <h4 class="contact-header">Contact<br> Info</h4 styles>
             <hr class="contact-rule">
                 <div class="phone">
-                    <img class="phone" src="./phone.png">
+                    <img onclick="numberShow()" class="phone" src="./phone.png">
                 </div>
                 <div>
-                    <p>123-456-7890</p>
+                    <p id="phoneNumber">123-456-7890</p>
                 </div>
                 <div>
                     <img class="pin" src="./pin.png">

@@ -29,6 +29,7 @@ body {
     box-shadow: -18px 19px 0px -7px white, -19px 19px 0px #9c9c9c;
 }
 
+
 .name {
     display: grid;
     font-family: Roboto Mono;
@@ -102,6 +103,14 @@ body {
     margin: auto;
     padding-top: 10px;
     width: 50%;
+}
+
+.phone:hover {
+    cursor: pointer;
+}
+
+#phoneNumber {
+    opacity: 0;
 }
 
 .pin {
